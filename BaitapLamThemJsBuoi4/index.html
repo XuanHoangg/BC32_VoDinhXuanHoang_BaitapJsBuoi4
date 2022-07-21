@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <br>
+        <br>
+        <br>
+        <h2>BÀI 1</h2>
+        <div class="card w-50">
+            <div class="card-header">
+                <div class="row">
+                    <div class="col-4">
+                        <input type="text" class="form-control" id="day" placeholder="Nhập ngày">
+                    </div>
+                    <div class="col-4">
+                        <input type="text" class="form-control" id="month" placeholder="Nhập tháng">
+                    </div>
+                    <div class="col-4">
+                        <input type="text" class="form-control" id="year" placeholder="Nhập năm">
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <button class="btn btn-success mr-5" id="before">Ngày trước đó</button>
+                <button class="btn btn-success" id="after">Ngày kế tiếp</button>
+            </div>
+            <div class="card-footer">
+                <div id="result"></div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <h2>BÀI 2</h2>
+        <div class="card w-50">
+            <div class="card-header">
+                <div class="row">
+                    <div class="col-6">
+                        <input type="text" class="form-control" id="monthEx2" placeholder="Nhập tháng">
+                    </div>
+                    <div class="col-6">
+                        <input type="text" class="form-control" id="yearEx2" placeholder="Nhập năm">
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <button class="btn btn-success" id="Ex2">Số ngày của tháng</button>
+            </div>
+            <div class="card-footer">
+                <div id="show"></div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <h2>BÀI 3</h2>
+        <div class="card w-50">
+            <div class="card-header">
+                <div class="row">
+                    <div class="col-12">
+                        <input type="text" class="form-control" id="number" placeholder="Nhập số nguyên có 3 chữ số">
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <button class="btn btn-success" id="print">In cách đọc</button>
+            </div>
+            <div class="card-footer">
+                <div id="hienThi"></div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <h2>BÀI 4</h2>
+        <div class="card w-50">
+            <div class="card-header">
+                <p class="mb-0 mt-2">Nhập tên và tọa độ x,y của sinh viên 1:</p>
+                <div class="row">
+                    <div class="col-4">
+                        <input type="text" class="form-control" id="name1" placeholder="Nhập tên">
+                    </div>
+                    <div class="col-4">
+                        <input type="text" class="form-control" id="x1" placeholder="Nhập tọa độ x">
+                    </div>
+                    <div class="col-4">
+                        <input type="text" class="form-control" id="y1" placeholder="Nhập tọa độ y">
+                    </div>
+                </div>
+                <p class="mb-0 mt-2">Nhập tên và tọa độ x,y của sinh viên 2:</p>
+                <div class="row">
+                    <div class="col-4">
+                        <input type="text" class="form-control" id="name2" placeholder="Nhập tên">
+                    </div>
+                    <div class="col-4">
+                        <input type="text" class="form-control" id="x2" placeholder="Nhập tọa độ x">
+                    </div>
+                    <div class="col-4">
+                        <input type="text" class="form-control" id="y2" placeholder="Nhập tọa độ y">
+                    </div>
+                </div>
+                <p class="mb-0 mt-2">Nhập tên và tọa độ x,y của sinh viên 3:</p>
+                <div class="row">
+                    <div class="col-4">
+                        <input type="text" class="form-control" id="name3" placeholder="Nhập tên">
+                    </div>
+                    <div class="col-4">
+                        <input type="text" class="form-control" id="x3" placeholder="Nhập tọa độ x">
+                    </div>
+                    <div class="col-4">
+                        <input type="text" class="form-control" id="y3" placeholder="Nhập tọa độ y">
+                    </div>
+                </div>
+                <p class="mb-0 mt-2">Nhập tọa độ x,y của trường học</p>
+                <div class="row">
+                    <div class="col-4">
+                        <input type="text" class="form-control" id="x4" placeholder="Nhập tọa độ x">
+                    </div>
+                    <div class="col-4">
+                        <input type="text" class="form-control" id="y4" placeholder="Nhập tọa độ y">
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <button class="btn btn-success mr-5" id="find">Tìm</button>
+
+            </div>
+            <div class="card-footer">
+                <div id="ketQua"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
